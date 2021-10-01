@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/icono.png"/>
+    <title>Generador de tarjetas</title>
+</head>
+<body>
+    <section class="titulo">
+        <h1>Generador de Tarjetas</h1>
+    </section>
+    <div id="tarjetaVista">
+        <div id="colorVista">
+            <h3 id="nombreVista"></h3>
+            <h1 id="tituloVista"></h1>
+            <div id="imagenVista"></div>
+            <h3 id="mensajeVista"></h3>
+        </div>
+    </div>
+    <section class="contenedor-main">
+        <article class="temas">
+            <h4>Elige un tema</h4>
+            <select id="temaTarjeta" class="temaTarjetas">
+                <option value="0" selected>Seleccione algun tema</option>
+                <option value="birthday">Cumpleaños</option>
+                <option value="sanValentin">San Valentin</option>
+                <option value="navidad">Navidad</option>
+            </select>
+        </article>
+        <article class="colores">
+            <label for="colorTarjeta">Color de fondo</label>
+            <input type="color" id="color-tarjeta">
+        </article>
+        <article class="temas-imagenes">
+            <h4>Elige un marco e imagen</h4>
+            <article class="marcos">
+                <input type="radio" name="marco" value="marco1"><img src="img/marco1.jpg" class="imagen-marco" alt="marco1">
+                <input type="radio" name="marco" value="marco2"><img src="img/marco2.jpg" class="imagen-marco" alt="marco2">
+                <input type="radio" name="marco" value="marco3"><img src="img/marco3.jpg" class="imagen-marco" alt="marco3">
+            </article>
+            <article class="imagenes">
+                <img src="img/imagen1.jpg" alt="imagen1" id="imagen1" name="imagen" class="imagen-general" onclick="fondo('imagen1')">
+                <img src="img/imagen2.jpg" alt="imagen2" id="imagen2" name="imagen" class="imagen-general" onclick="fondo('imagen2')">
+                <img src="img/imagen3.jpg" alt="imagen3" id="imagen3" name="imagen" class="imagen-general" onclick="fondo('imagen3')">
+            </article>
+        </article>
+        <article class="datos">
+            <h4>Datos</h4>
+            <article class="datos-izq">
+                <input type="text" id="nombre" placeholder="Ingresa el nombre">
+                <input type="color" id="color-nombre">
+                <input type="text" id="titulo-tarjeta" placeholder="Ingresa un titulo">
+                <input type="color" id="color-titulo">
+            </article>
+            <article class="datos-der">
+                <textarea name="mensaje" id="mensaje" class="mensajes" cols="30" rows="5" placeholder="Ingresa el mensaje"></textarea>
+                <input type="color" id="color-mensaje">
+            </article>
+        </article>
+        <input type="button" id="mostrar" value="Mostrar" onclick="mostrar()">
+    </section>
+    <script src="js/app.js"></script>
+</body>
+</html>

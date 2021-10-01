@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Niconne&family=Stint+Ultra+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.titulo{
+    width: 100vw;
+    height: 50px;
+    text-align: center;
+    background-color: rgb(226, 110, 81);
+    color: #fff;
+}
+
+.contenedor-main{
+    width: 63.46%;
+    height: 539px;
+    margin-left: 35%;
+    margin-top: -555px;
+    background-color: rgb(112, 112, 199);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.temas, .colores, .temas-imagenes, .datos{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type="text"], .temaTarjetas, .mensajes{
+    width: 200px;
+    padding: 5px;
+    margin: 10px;
+    border: none;
+}
+
+input[type="button"]{
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background-color: rgb(226, 110, 81);
+    cursor: pointer;
+}
+
+input[type="button"]:hover{
+    background-color: rgb(235, 149, 128);
+}
+
+.imagen-marco{
+    width: 50px;
+    height: 50px;
+}
+
+.imagen-general{
+    width: 80px;
+    height: 100px;
+}
+
+#tarjeta{
+    width: 35%;
+    height: 530px;
+    background-color: blue;
+}
+
+#tarjetaVista{
+    width: 35%;
+    height: 555px;
+    background-color: aquamarine;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#colorVista{
+    position: relative;
+    width: 85%;
+    height: 530px;
+    top: 25px;
+    left: 7.5%;
+    background-color: brown;
+}
+
+#nombreVista, #tituloVista{
+    position: absolute;
+    margin: 25px;
+    font-family: 'Lobster', cursive;
+}
+
+#tituloVista{
+    top: 30px;
+    left: 100px;
+    font-family: 'Niconne', cursive;
+}
+
+#imagenVista{
+    position: relative;
+    width: 85%;
+    height: 380px;
+    left: 7.5%;
+    top: 100px;
+    background-color: bisque;
+}
+
+#mensajeVista{
+    position: absolute;
+    top: 490px;
+    left: 150px;
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-size: 30px;
+}
